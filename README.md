@@ -461,5 +461,6 @@ cd C:\FNS\server; Start-Process powershell -ArgumentList "-NoExit", "-Command", 
 ```
 cd C:\FNS\client; Start-Process powershell -ArgumentList "-NoExit", "-Command", "npm run dev" -WindowStyle Minimized
 ```
-**Built with ❤️ using modern web technologies**
+**Built with using modern web technologies** 
+**~made by Ankit**
 
