@@ -12,7 +12,7 @@ const Layout = () => {
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const navItems = [
+  const navItems = [    
     { path: '/dashboard', icon: FiHome, label: 'Dashboard' },
     { path: '/transactions', icon: FiDollarSign, label: 'Transactions' },
     { path: '/budgets', icon: FiPieChart, label: 'Budgets' },
@@ -21,6 +21,7 @@ const Layout = () => {
     { path: '/investments', icon: FiBriefcase, label: 'Investments' },
     { path: '/settings', icon: FiSettings, label: 'Settings' },
   ];
+
 
   const isAdmin = user?.publicMetadata?.role === 'admin';
 
@@ -160,4 +161,3 @@ const Layout = () => {
 };
 
 export default Layout;
-

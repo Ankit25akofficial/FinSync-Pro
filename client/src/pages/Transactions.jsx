@@ -142,14 +142,14 @@ const Transactions = () => {
                 placeholder="Search transactions..."
                 value={filters.search || ''}
                 onChange={(e) => dispatch(setFilters({ search: e.target.value }))}
-                className="w-full pl-10 pr-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500"
+                className="w-full pl-10 pr-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white  placeholder-gray-400 focus:outline-none focus:border-purple-500"
               />
             </div>
           </div>
           <select
             value={filters.type || ''}
             onChange={(e) => dispatch(setFilters({ type: e.target.value }))}
-            className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+            className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
           >
             <option value="">All Types</option>
             <option value="income">Income</option>
@@ -158,7 +158,7 @@ const Transactions = () => {
           <select
             value={filters.category || ''}
             onChange={(e) => dispatch(setFilters({ category: e.target.value }))}
-            className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+            className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
           >
             <option value="">All Categories</option>
             <option value="Food">Food</option>
@@ -326,7 +326,7 @@ const Transactions = () => {
           onSuccess={() => {
             loadTransactions();
             setShowModal(false);
-            setEditingTransaction(null);
+            setEditingTransaction(null); 
           }}
         />
       )}

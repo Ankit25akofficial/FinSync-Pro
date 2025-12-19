@@ -103,7 +103,7 @@ const InvestmentModal = ({ investment, onClose, onSuccess }) => {
                 <select
                   value={formData.type}
                   onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
                   required
                 >
                   <option value="Stock">Stock</option>

@@ -44,6 +44,7 @@ const BudgetModal = ({ budget, onClose, onSuccess }) => {
       onSuccess();
     } catch (error) {
       toast.error(error.response?.data?.error || 'Failed to save budget');
+      
     } finally {
       setLoading(false);
     }
@@ -84,7 +85,7 @@ const BudgetModal = ({ budget, onClose, onSuccess }) => {
               <select
                 value={formData.category}
                 onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
                 required
               >
                 <option value="">Select category</option>
@@ -117,7 +118,7 @@ const BudgetModal = ({ budget, onClose, onSuccess }) => {
                 <select
                   value={formData.month}
                   onChange={(e) => setFormData({ ...formData, month: parseInt(e.target.value) })}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
                 >
                   {Array.from({ length: 12 }, (_, i) => i + 1).map((month) => (
                     <option key={month} value={month}>

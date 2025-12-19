@@ -90,7 +90,7 @@ const TransactionModal = ({ transaction, onClose, onSuccess }) => {
           className="glass-card max-w-2xl w-full max-h-[90vh] overflow-y-auto"
         >
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">
+            <h2 className="text-2xl font-bold ">
               {transaction ? 'Edit Transaction' : 'Add Transaction'}
             </h2>
             <button
@@ -110,7 +110,7 @@ const TransactionModal = ({ transaction, onClose, onSuccess }) => {
                 <select
                   value={formData.type}
                   onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
                   required
                 >
                   <option value="income">Income</option>
@@ -141,7 +141,7 @@ const TransactionModal = ({ transaction, onClose, onSuccess }) => {
                   <select
                     value={formData.category}
                     onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+                    className="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
                     required
                   >
                     <option value="">Select category</option>
@@ -154,7 +154,7 @@ const TransactionModal = ({ transaction, onClose, onSuccess }) => {
                       type="button"
                       onClick={handleAutoCategorize}
                       disabled={categorizing}
-                      className="px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg text-white text-sm disabled:opacity-50"
+                      className="px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg text-black text-sm disabled:opacity-50"
                     >
                       {categorizing ? '...' : 'AI'}
                     </button>
@@ -182,7 +182,7 @@ const TransactionModal = ({ transaction, onClose, onSuccess }) => {
                 <select
                   value={formData.paymentMethod}
                   onChange={(e) => setFormData({ ...formData, paymentMethod: e.target.value })}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+                  className="w-full px-4 py-2 bg-white/10 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
                 >
                   <option value="Cash">Cash</option>
                   <option value="Card">Card</option>

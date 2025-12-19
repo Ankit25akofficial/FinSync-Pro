@@ -66,6 +66,8 @@ const GoalModal = ({ goal, onClose, onSuccess }) => {
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-white">
               {goal ? 'Edit Goal' : 'Create Goal'}
+
+              
             </h2>
             <button
               onClick={onClose}
@@ -155,7 +157,7 @@ const GoalModal = ({ goal, onClose, onSuccess }) => {
                 <select
                   value={formData.status}
                   onChange={(e) => setFormData({ ...formData, status: e.target.value })}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-black focus:outline-none focus:border-purple-500"
                 >
                   <option value="active">Active</option>
                   <option value="paused">Paused</option>
