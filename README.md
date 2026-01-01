@@ -102,7 +102,6 @@ npm run dev
 The frontend will run on `http://localhost:5173`
 
 ## 📁 Project Structure
-
 ```
 FNS/
 ├── server/                 # Backend (Node.js + Express)
@@ -122,7 +121,7 @@ FNS/
 │   │   ├── utils/         # Utility functions
 │   │   ├── App.jsx        # Main app component
 │   │   └── main.jsx       # Entry point
-│   └── package.json
+│   └── package.json 
 │
 └── README.md
 ```
@@ -386,7 +385,7 @@ Get system statistics (Admin only)
 ### Server (.env)
 ```
 PORT=5000
-MONGODB_URI=your_mongodb_connection_string
+MONGODB_URI=your_mongodb_connection_string.
 CLERK_SECRET_KEY=your_clerk_secret_key
 CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 JWT_SECRET=your_jwt_secret
